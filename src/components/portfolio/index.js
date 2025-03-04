@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import mn2 from "../../images/protfolio/minimalism/img-2.jpg";
-import mn3 from "../../images/protfolio/minimalism/img-3.jpg";
 import PortfolioSingle from "../portfolioSingle";
 
 import ab1 from "../../images/protfolio/abstract/img-1.jpg";
@@ -25,6 +23,7 @@ import p2 from "../../images/protfolio/pdesign/img-2.jpg";
 import p3 from "../../images/protfolio/pdesign/img-3.jpg";
 
 import repgympass1 from "../../images/protfolio/my-portfolio/rep-gym/rep-gym-1.png";
+import repgympass2 from "../../images/protfolio/my-portfolio/rep-gym/rep-gym-2.jpeg";
 
 import "./style.css";
 
@@ -52,10 +51,10 @@ const Portfolio = () => {
       date: "25 Jan 2021",
       videosId: "LUSa3yRTB9A",
       pImg1: repgympass1,
-      pImg2: mn2,
-      pImg3: mn3,
+      pImg2: repgympass2,
+      pImg3: repgympass1,
       vedio: "",
-      des: "Minimalism, Landing Page Design, App development, Mobile an Website Design an expert web designer and developer. Contrary to popular belief Lorem Ipsum is not simply random text. It has Design,",
+      des: "Rep Gym Pass is a React Native CLI and TypeScript app that functions as a digital gym passport in the USA. Users can subscribe to Basic, Silver, or Platinum plans to check in at partnered gyms. Key Features: Google Maps API for gym locations\nStripe Payment for secure transactions\nQR Code Scanner for check-ins\nFirebase backend for authentication and data storage\nThe app is live on the App Store and Google Play Store.",
     },
     {
       Id: "2",
@@ -183,6 +182,7 @@ const Portfolio = () => {
         videosId={state.videosId}
         value={state.value}
         date={state.date}
+        des={state.des}
       />
 
       <div className="white_svg svg_white">
